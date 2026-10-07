@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Жизненные ситуации — концепт-прототип</title>
+  <meta name="description" content="Концепт-прототип раздела «Жизненные ситуации»: Путеводитель российской семьи внутри Госуслуг. Не является официальным сервисом.">
+  <meta name="robots" content="noindex">
+  <link rel="preload" href="fonts/lato-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230D4CD3'/%3E%3Cpath d='M9 22l4-12 4 8 2-4 4 8' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#app">К содержанию</a>
+
+  <div class="proto-bar" role="note">
+    <div class="wrap proto-in">
+      <span><b>Концепт-прототип</b> проекта «Путеводитель российской семьи». Не является официальным сервисом.</span>
+      <a href="#/about">О проекте</a>
+    </div>
+  </div>
+
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="logo" href="#/" aria-label="На главную раздела">Госуслуги</a>
+      <button class="hdr-who" type="button" data-toast="В прототипе работает раздел «Жизненные ситуации»">Гражданам <i data-lucide="chevron-down"></i></button>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="#/" data-toast-link>Услуги</a>
+        <a href="#/" data-toast-link>Документы</a>
+        <a href="#/" data-toast-link>Заявления</a>
+        <a href="#/" data-toast-link>Платежи</a>
+        <a href="#/" data-toast-link>Помощь</a>
+        <a href="#/" class="nav-life" aria-current="page">Жизненные ситуации</a>
+      </nav>
+      <a class="hdr-search" href="#/search" aria-label="Поиск"><i data-lucide="search"></i></a>
+      <button class="login" type="button" data-toast="Вход отключён: это прототип без сбора данных">Войти</button>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+    <div class="mnav" hidden>
+      <a href="#/">Жизненные ситуации</a>
+      <a href="#/search">Поиск по ситуациям</a>
+      <a href="#/kniga">Книга: 84 раздела</a>
+      <a href="#/qr">QR-коды для книги</a>
+      <a href="#/about">О проекте</a>
+    </div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <div class="ftr-cols">
+        <div>
+          <div class="ftr-h">Жизненные ситуации</div>
+          <a href="#/">Все сферы жизни</a>
+          <a href="#/search">Поиск</a>
+          <a href="#/kniga">Книга: 12 частей, 84 раздела</a>
+          <a href="#/qr">QR-коды для печатной книги</a>
+        </div>
+        <div>
+          <div class="ftr-h">Путеводители</div>
+          <a href="#/situations/uhod-za-tyazhelobolnym">Когда близкий нуждается в уходе</a>
+          <a href="#/situations/smena-professii">Когда пора менять профессию</a>
+          <a href="#/situations/rebenok-v-shkolu">Когда ребёнок растёт</a>
+          <a href="#/situations/planirovanie-rebenka">Когда не получается завести ребёнка</a>
+        </div>
+        <div>
+          <div class="ftr-h">О проекте</div>
+          <a href="#/about">«Путеводитель российской семьи»</a>
+          <span class="ftr-note">Проект «Уверенность в будущем», программа «Код лидера», Группа АБР</span>
+        </div>
+      </div>
+      <p class="ftr-legal">Концепт-прототип. Не является официальным сервисом и не связан с порталом Госуслуг. Тексты — черновик, проверяются экспертами. Суммы, сроки и телефоны сверяйте на дату обращения.</p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
